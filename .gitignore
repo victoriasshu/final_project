@@ -1,5 +1,6 @@
 *.DS_Store
 *.ipynb_checkpoints*
 __pycache__/
+yellow_taxi/
 
 # Add more files & directories as needed
