@@ -20,37 +20,6 @@ CREATE TABLE weather_data (
             HourlyWindGustSpeed REAL,
             HourlyWindSpeed REAL
         );
-CREATE TABLE uber_rides (
-	fare_amount FLOAT, 
-	pickup_datetime TIMESTAMP, 
-	pickup_longitude FLOAT, 
-	pickup_latitude FLOAT, 
-	dropoff_longitude FLOAT, 
-	dropoff_latitude FLOAT, 
-	passenger_count BIGINT, 
-	"distance_PD" FLOAT
-);
-CREATE TABLE hourly_weather_data (
-	"DATE" TEXT, 
-	"LATITUDE" FLOAT, 
-	"LONGITUDE" FLOAT, 
-	"HourlyAltimeterSetting" TEXT, 
-	"HourlyDewPointTemperature" TEXT, 
-	"HourlyDryBulbTemperature" TEXT, 
-	"HourlyPrecipitation" TEXT, 
-	"HourlyPresentWeatherType" TEXT, 
-	"HourlyPressureChange" TEXT, 
-	"HourlyPressureTendency" FLOAT, 
-	"HourlyRelativeHumidity" FLOAT, 
-	"HourlySkyConditions" TEXT, 
-	"HourlySeaLevelPressure" TEXT, 
-	"HourlyStationPressure" FLOAT, 
-	"HourlyVisibility" TEXT, 
-	"HourlyWetBulbTemperature" FLOAT, 
-	"HourlyWindDirection" TEXT, 
-	"HourlyWindGustSpeed" FLOAT, 
-	"HourlyWindSpeed" FLOAT
-);
 CREATE TABLE yellow_taxi_ride (
 	trip_distance FLOAT, 
 	tip_amount FLOAT, 
@@ -63,4 +32,26 @@ CREATE TABLE yellow_taxi_ride (
 	pickup_datetime DATETIME, 
 	pickup_longitude FLOAT, 
 	"distance_PD" FLOAT
+);
+CREATE TABLE uber_rides (
+	fare_amount FLOAT, 
+	pickup_datetime TIMESTAMP, 
+	pickup_longitude FLOAT, 
+	pickup_latitude FLOAT, 
+	dropoff_longitude FLOAT, 
+	dropoff_latitude FLOAT, 
+	passenger_count BIGINT, 
+	"distance_PD" FLOAT
+);
+CREATE TABLE hourly_weather_data (
+	"DATE" DATETIME, 
+	"HourlyPrecipitation" TEXT, 
+	"HourlyWindSpeed" FLOAT
+);
+CREATE TABLE daily_weather_data (
+	"DATE" DATETIME, 
+	"DailyAverageWindSpeed" FLOAT, 
+	"DailyPeakWindSpeed" FLOAT, 
+	"DailySustainedWindSpeed" FLOAT, 
+	"DailyPrecipitation" TEXT
 );
