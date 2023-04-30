@@ -21,6 +21,7 @@ CREATE TABLE weather_data (
             HourlyWindSpeed REAL
         );
 CREATE TABLE yellow_taxi_ride (
+	id BIGINT, 
 	trip_distance FLOAT, 
 	tip_amount FLOAT, 
 	total_amount FLOAT, 
@@ -34,6 +35,7 @@ CREATE TABLE yellow_taxi_ride (
 	"distance_PD" FLOAT
 );
 CREATE TABLE uber_rides (
+	id BIGINT, 
 	fare_amount FLOAT, 
 	pickup_datetime TIMESTAMP, 
 	pickup_longitude FLOAT, 
@@ -44,11 +46,13 @@ CREATE TABLE uber_rides (
 	"distance_PD" FLOAT
 );
 CREATE TABLE hourly_weather_data (
+	id BIGINT, 
 	"DATE" DATETIME, 
 	"HourlyPrecipitation" FLOAT, 
 	"HourlyWindSpeed" FLOAT
 );
 CREATE TABLE daily_weather_data (
+	id BIGINT, 
 	"DATE" DATETIME, 
 	"DailyAverageWindSpeed" FLOAT, 
 	"DailyPeakWindSpeed" FLOAT, 
@@ -56,6 +60,7 @@ CREATE TABLE daily_weather_data (
 	"DailyPrecipitation" FLOAT
 );
 CREATE TABLE sunrise_sunset_data (
+	id BIGINT, 
 	"DATE" DATETIME, 
 	"Sunrise" FLOAT, 
 	"Sunset" FLOAT, 
