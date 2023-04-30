@@ -20,18 +20,6 @@ CREATE TABLE weather_data (
             HourlyWindGustSpeed REAL,
             HourlyWindSpeed REAL
         );
-CREATE TABLE yellow_taxi_ride (
-	trip_distance FLOAT, 
-	total_amount FLOAT, 
-	passenger_count BIGINT, 
-	dropoff_latitude FLOAT, 
-	dropoff_datetime DATETIME, 
-	dropoff_longitude FLOAT, 
-	pickup_latitude FLOAT, 
-	pickup_datetime DATETIME, 
-	pickup_longitude FLOAT, 
-	"distance_PD" FLOAT
-);
 CREATE TABLE uber_rides (
 	fare_amount FLOAT, 
 	pickup_datetime TIMESTAMP, 
@@ -62,4 +50,17 @@ CREATE TABLE hourly_weather_data (
 	"HourlyWindDirection" TEXT, 
 	"HourlyWindGustSpeed" FLOAT, 
 	"HourlyWindSpeed" FLOAT
+);
+CREATE TABLE yellow_taxi_ride (
+	trip_distance FLOAT, 
+	tip_amount FLOAT, 
+	total_amount FLOAT, 
+	passenger_count BIGINT, 
+	dropoff_latitude FLOAT, 
+	dropoff_datetime DATETIME, 
+	dropoff_longitude FLOAT, 
+	pickup_latitude FLOAT, 
+	pickup_datetime DATETIME, 
+	pickup_longitude FLOAT, 
+	"distance_PD" FLOAT
 );
