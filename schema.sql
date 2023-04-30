@@ -45,7 +45,7 @@ CREATE TABLE uber_rides (
 );
 CREATE TABLE hourly_weather_data (
 	"DATE" DATETIME, 
-	"HourlyPrecipitation" TEXT, 
+	"HourlyPrecipitation" FLOAT, 
 	"HourlyWindSpeed" FLOAT
 );
 CREATE TABLE daily_weather_data (
@@ -53,5 +53,5 @@ CREATE TABLE daily_weather_data (
 	"DailyAverageWindSpeed" FLOAT, 
 	"DailyPeakWindSpeed" FLOAT, 
 	"DailySustainedWindSpeed" FLOAT, 
-	"DailyPrecipitation" TEXT
+	"DailyPrecipitation" FLOAT
 );
