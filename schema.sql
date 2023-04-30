@@ -55,3 +55,12 @@ CREATE TABLE daily_weather_data (
 	"DailySustainedWindSpeed" FLOAT, 
 	"DailyPrecipitation" FLOAT
 );
+CREATE TABLE sunrise_sunset_data (
+	"DATE" DATETIME, 
+	"Sunrise" FLOAT, 
+	"Sunset" FLOAT, 
+	"DailyAverageWindSpeed" FLOAT, 
+	"DailyPeakWindSpeed" FLOAT, 
+	"DailySustainedWindSpeed" FLOAT, 
+	"DailyPrecipitation" FLOAT
+);
