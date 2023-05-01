@@ -1,1 +1,12 @@
 # Add your third-party Python libraries here
+numpy
+pandas
+geopandas
+beautifulsoup4
+requests
+pyarrow
+matplotlib
+folium
+pytest
+sqlalchemy
+sqlite3
