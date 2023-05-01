@@ -10,3 +10,7 @@ folium
 pytest
 sqlalchemy
 sqlite3
+re
+math
+os
+glob
