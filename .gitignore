@@ -3,3 +3,6 @@
 __pycache__/
 yellow_taxi/
 *.db
+*.csv
+taxi_zones/
+weather/
